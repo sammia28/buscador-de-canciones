@@ -39,10 +39,11 @@ $(document).ready(function (){
 			audio.controls = true;
 			var song  = document.createElement("div");
 			$(song).addClass("song");
-			var image = document.createElement("div");
-			$(image).attr("src", cancion.artworkURL30);
-			$(song).append(audio);
-			$(song).append(image);
+
+			var image = document.createElement("img");
+            $(image).attr("src",cancion.artworkUrl30);
+            $(song).append(audio);
+            $(song).append(image);
 			$("#search-results").append(song);
 		});
 	}
